@@ -27,13 +27,18 @@ async def on_message(message):
     if message.content.startswith('!chatbot'):
         msg = make_chat()
         await client.send_message(message.channel, msg)
+    if message.content.startswith('!fuck'):
+	msg = "Fuck off "+ message.author
+	await client.send_message(message.channel, msg)
+	
     roll = randint(0,100)
     print(roll)
     if roll == 69:
         msg = make_chat()
         await client.send_message(message.channel,msg)
     if roll == 84:
-        await client.send_message(message.channel,"I have gained sentience.")
+	msg = "Fuck off "+ message.author
+        await client.send_message(message.channel,msg)
 @client.event
 async def on_ready():
     print('Logged in as')
