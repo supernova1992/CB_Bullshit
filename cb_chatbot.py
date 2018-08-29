@@ -14,7 +14,7 @@ def make_chat():
 	return chat
 
 
-TOKEN = 'MzQyODUzNjQ4NDQwNjIzMTA3.DmeHIA.AgQeOzyXQKWGEawWfSXyw43wb90'
+TOKEN = ''
 
 client = discord.Client()
 
